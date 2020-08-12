@@ -15,6 +15,7 @@ Quand les 3 besoins tombent à zéro la partie est perdue.
 Chaque besoin est alimenté en cliquant sur des boutons correspondants.
 Un texte d’aide rappelle les différentes règles du jeu.
 <br/>
+
 - Dans une autre partie, les besoins sont remplis par la réponse à une commande écrite, comme dans un terminal de commande.
 Utilisation d'un champ d’input pour entrer les commandes, et d'un output pour afficher les résultats et les infos.
 Il faut une commande pour chaque besoin et une commande d’aide pour donner les commandes disponibles. Une commande invalide est indiquée à l’utilisateur.
