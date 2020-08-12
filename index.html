@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+	
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/fav.png">
+        <meta name="description" content="The Child · Yodamagotchi - may the force be with you #starwars #child #mandalorian">
+
+        <title>The Child · Baby Yodamagoshi</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Cutive+Mono&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="assets/sass/style.css">
+
+		
+	</head>
+	
+	<body>
+
+        <!-- MAIN CONTAINER -->	
+        <div class="container container__style container__desktop">
+
+            <!-- CHILD PANEL -->
+            <div class="row" >
+                <div class="col-md-12">
+                    <img class="img-fluid" src="assets/images/mandalorian.png">
+                    <h1>The Child · Baby Yodamagotchi</h1>
+                </div>
+
+
+                <div class="col-md-6  mx-auto">
+                    <!-- Yoda img -->		
+                    <div class="baby-yoda-img">
+                        <img id="child-yoda" src="assets/images/yoda1.gif"></img>
+                    </div>
+                
+                    <!-- stat faim -->
+                    <div id="stat-faim">
+                        Faim: <progress id="barre-faim" min="0" max="100" value="100">
+                            </progress>
+                    </div>
+                
+                    <!-- stat soif -->
+                    <div id="stat-soif">
+                        Soif: <progress id="barre-soif" min="0" max="100" value="100" >
+                            </progress>
+                    </div>
+                
+                    <!-- stat fun -->
+                    <div id="stat-fun">
+                        Fun: <progress id="barre-fun" min="0" max="100" value="100">
+                            </progress>
+                    </div>
+
+                    <!-- boutons -->
+                    <div class="btn-besoins">
+                        <button type="button" id="btn-faim" class="btn btn-dark">Nourrir</button>
+                        <button type="button" id="btn-soif" class="btn btn-dark">Boire</button>
+                        <button type="button" id="btn-fun" class="btn btn-dark">Force</button>
+                    </div>
+
+
+                <!-- END CHILD PANEL -->
+                </div>
+
+
+
+                <!-- COMMAND PANEL -->
+                <div class="col-md-6 desktop-panel">                
+
+                    <div class="aide">
+
+                        <!-- Accordion -->
+                        <div id="accordionExample" class="accordion  shadow">
+
+                            <!-- règles du jeu  -->
+                            <div class="card">
+                                <div id="headingOne" class="card-header bg-white shadow-sm border-0">
+                                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="d-block position-relative text-dark text-uppercase collapsible-link py-2">Règles du jeu</a></h6>
+                                </div>
+                                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
+                                    <div class="card-body p-5">
+                                        <p class="font-weight-light m-0">
+                                            <ul>
+                                            <li>Appuyer sur le bouton correspondant au besoin pour remplir la jauge.</li>
+                                            <li>Si une jauge est vide, il est impossible de la remplir à nouveau.</li>
+                                            <li>Si les 3 jauges sont à 0, Baby Yoda rejoindra la force, la partie sera finie.</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- terminal de commande -->
+                            <div class="card">
+                                <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
+                                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">Terminal de commande</a></h6>
+                                </div>
+                                <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
+                                    <!-- console input output -->
+                                    <div class="card-body p-5" id="console">
+                                        <p class="font-weight-light m-0">
+                                            <input class="input__user" type="text" id="user-box" placeholder="taper la commande + touche entrée" autocomplete="off" ><br/>
+                                            <textarea class="input__console" id="output-box" readonly></textarea>
+                                            <p>saisir "aide" pour consulter les commandes</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- musique -->
+                            <div class="card">
+                                <div id="headingThree" class="card-header bg-white shadow-sm border-0">
+                                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2">Musique</a></h6>
+                                </div>
+                                <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
+                                    <div class="card-body p-5">
+                                    <p class="font-weight-light m-0">
+                                        <figure>
+                                            <figcaption>Thème principal:</figcaption>
+                                            <audio
+                                                controls
+                                                src="assets/mandalorian.mp3">
+                                                    Your browser does not support the
+                                                    <code>audio</code> element.
+                                            </audio>
+                                        </figure>
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+
+                    </div>
+
+            
+                <!-- END COMMAND PANEL -->
+                </div>
+          
+        <!-- END MAIN CONTAINER -->
+        </div>
+
+	<!-- JAVASCRIPT FILE -->		
+    <script src="script.js"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+		
+	</body>
+	
+</html>
