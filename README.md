@@ -21,7 +21,6 @@ Un texte d’aide rappelle les différentes règles du jeu.
 - Dans une autre partie, les besoins sont remplis par la réponse à une commande écrite, comme dans un terminal de commande.
 Utilisation d'un champ d’input pour entrer les commandes, et d'un output pour afficher les résultats et les infos.
 Il faut une commande pour chaque besoin et une commande d’aide pour donner les commandes disponibles. Une commande invalide est indiquée à l’utilisateur.
-<br/>
 
 ## TAGS
 - HTML5
@@ -29,7 +28,6 @@ Il faut une commande pour chaque besoin et une commande d’aide pour donner les
 - SASS
 - Bootstrap4
 - Javascript
-<br/>
 
 ## AUTEURE
 Déb Phoenix ~ *good vibes only*
