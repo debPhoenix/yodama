@@ -22,7 +22,7 @@ Un texte d’aide rappelle les différentes règles du jeu.
 Utilisation d'un champ d’input pour entrer les commandes, et d'un output pour afficher les résultats et les infos.
 Il faut une commande pour chaque besoin et une commande d’aide pour donner les commandes disponibles. Une commande invalide est indiquée à l’utilisateur.
 
-## TAGS
+## TECHNO-TAGS
 - HTML5
 - CSS3
 - SASS
