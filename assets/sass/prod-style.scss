@@ -1,7 +1,7 @@
 @import 'bootstrap-4.5.0/scss/bootstrap.scss';
 
 
-/* MAIN STYLE */ 
+/* MAIN STYLE */
 body{
 	background: linear-gradient(130deg, #7e9fc0, #fefaab, #fe8c78, #fd7687, #3a1c53);
 	background-size: 1000% 1000%;
@@ -9,25 +9,7 @@ body{
 	-webkit-animation: sunrisesunset 46s ease infinite;
 	-moz-animation: sunrisesunset 46s ease infinite;
 	animation: sunrisesunset 46s ease infinite;
-	}
-	
-	  
-	@-webkit-keyframes sunrisesunset {
-		0%{background-position:5% 0%}
-		50%{background-position:96% 100%}
-		100%{background-position:5% 0%}
-	}
-	@-moz-keyframes sunrisesunset {
-		0%{background-position:5% 0%}
-		50%{background-position:96% 100%}
-		100%{background-position:5% 0%}
-	}
-	@keyframes sunrisesunset { 
-		0%{background-position:5% 0%}
-		50%{background-position:96% 100%}
-		100%{background-position:5% 0%}
-	}
-	
+}
 
 h1{
 	font-family: 'Ubuntu', sans-serif;
@@ -38,12 +20,38 @@ h1{
 	text-align: center;
 }
 
+ul, li {
+	margin-left: 0;
+	padding-left: 0;
+  }
+
 .container__style{
 	margin-top: 2em !important;
 	margin-bottom: 2em !important;
 	padding-bottom: 5em !important;
 	background-color: white;
 	border-radius: 5em;
+}
+
+.row__style{
+	margin-left: 0;
+    margin-right: 0;
+}
+	  
+@-webkit-keyframes sunrisesunset {
+	0%{background-position:5% 0%}
+	50%{background-position:96% 100%}
+	100%{background-position:5% 0%}
+}
+@-moz-keyframes sunrisesunset {
+	0%{background-position:5% 0%}
+	50%{background-position:96% 100%}
+	100%{background-position:5% 0%}
+}
+@keyframes sunrisesunset { 
+	0%{background-position:5% 0%}
+	50%{background-position:96% 100%}
+	100%{background-position:5% 0%}
 }
 
 
@@ -69,22 +77,8 @@ h1{
 
 
 /* STATS TITRES */ 
-#stat-faim {
-	font-family: 'Ubuntu', sans-serif;
-	margin-left: auto;
-	margin-right: auto;
-	color: #000;
-	text-align: center;
-}
-
-#stat-soif {
-	font-family: 'Ubuntu', sans-serif;
-	margin-left: auto;
-	margin-right: auto;
-	color: #000;
-	text-align: center;
-}
-
+#stat-faim,
+#stat-soif,
 #stat-fun {
 	font-family: 'Ubuntu', sans-serif;
 	margin-left: auto;
@@ -103,6 +97,7 @@ h1{
 	color: #000;
 	width: 90%;
 }
+
 
 /* CONSOLE UNPUT OUTPUT */ 
 .console{
@@ -142,6 +137,7 @@ h1{
 	color: white;
 	background-color: #666;
 }
+
 
 /* ACCORDEON */ 
 

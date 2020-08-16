@@ -9918,33 +9918,6 @@ body {
   animation: sunrisesunset 46s ease infinite;
 }
 
-h1 {
-  font-family: "Ubuntu", sans-serif;
-  color: black;
-  font-size: 35px;
-  line-height: 45px;
-  font-weight: 400;
-  text-align: center;
-}
-
-ul, li {
-  margin-left: 0;
-  padding-left: 0;
-}
-
-.container__style {
-  margin-top: 2em !important;
-  margin-bottom: 2em !important;
-  padding-bottom: 5em !important;
-  background-color: white;
-  border-radius: 5em;
-}
-
-.row__style {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 @-webkit-keyframes sunrisesunset {
   0% {
     background-position: 5% 0%;
@@ -9978,6 +9951,23 @@ ul, li {
     background-position: 5% 0%;
   }
 }
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container__style {
+  margin-top: 2em !important;
+  margin-bottom: 2em !important;
+  padding-bottom: 5em !important;
+  background-color: white;
+  border-radius: 5em;
+}
+
 /* DESKTOP STYLE */
 @media (min-width: 768px) {
   .desktop-panel {
@@ -10090,4 +10080,4 @@ ul, li {
   transform: rotate(180deg);
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styme.css.map */
